@@ -1,0 +1,129 @@
+.jumbotron, header{
+    margin:0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url("imgs/full-bloom.png");
+
+}
+
+p{
+    font-weight:400;
+}
+
+h1, h2, h3{
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+}
+
+.navbar{
+    background:rgba(226,173,179, 0.8);
+    text-shadow: 2px 2px 4px #6B5256;
+    
+}
+
+a.navbar-brand img{
+    width: 200px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size:1.5rem;
+    color:rgba(255,255,255, 1);
+    padding-right:80px;
+}
+
+
+.jumbotron{
+    height:100vh;
+    padding:0;
+    background:url("imgs/header.jpg") no-repeat;
+    background-size: cover;
+    background-position:center;
+    text-align:center;
+}
+
+h1, h2{
+    color:#FFF;
+    text-shadow: 2px 2px 4px rgb(124, 124, 124);
+    flex:1 100%;
+
+}
+
+#about img{
+    width:90%;
+}
+
+#about{
+    color:#895442;
+}
+
+#about span{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color:#FF9797;
+    font-size:1.7rem;
+}
+
+section{
+    margin-bottom:150px;
+}
+
+section:nth-of-type(even){
+    background:#895442;
+    color:#FFF;
+}
+
+#team .col-lg-6{
+    margin-bottom:70px;
+}
+
+#team h3{
+    margin-top:70px;
+}
+
+#team h4{
+    font-weight:600;
+}
+
+#team img{
+    width:150px;
+    height:150px;
+    margin-right:20px;
+}
+
+
+@media only screen and (min-width:768px){
+    #about .col-md-6{
+        order:1;
+    }
+
+    #about .col-md-5{
+        order:2;
+    }
+}
+
+
+
+@media only screen and (min-width:992px){
+    .navbar{
+        background:none;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        font-size:2rem;
+
+    }
+
+
+    body{min-height:200vh;}
+
+    .navbar-default{
+        transition:500ms ease;
+        background:transparent;
+    }
+
+    .navbar-default.scrolled{
+    background:rgba(226,173,179, 0.8);
+    }
+
+}

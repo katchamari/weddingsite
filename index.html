@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600|Oleo+Script+Swash+Caps&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img src="imgs/logoshadow.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plan</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <header class="mb-5 d-flex justify-content-center align-items-center jumbotron jumbotron-fluid">
+        <div>
+            <h1>Your dream wedding is one click away.</h1>
+            <h2>Start Planning Now</h2>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-5 mb-4">
+                <h3 class="display-3">About Us</h3>
+                <p><span>i do</span> is a team of skilled designers in all fields dedicated to making your
+                    fantasy wedding come to life. Our
+                    service is open to all kindhearted people, regardless of race, gender, or sexuality, and we will
+                    provide you a wedding you will never forget.
+                    Nothing is impossible with us.</p>
+            </div>
+            <div class="col-md-6"><img src="imgs/marriagephoto.png"></div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 mb-4">
+                    <h3 class="display-3">Our Team</h3>
+                    <p>The lone wedding planner is so outdated. We have a personal team of people each with specialized
+                        skills and an eagerness to collaborate with you to bring your dream to life</p>
+                </div>
+
+                <div class="col-lg-6 d-flex">
+                    <img src="imgs/team1.png">
+                    <div class="ml-auto">
+                        <h4>Anthony // Catering</h4>
+                        <p>With years of
+                            professional catering experience, Anthony is more than capable of acquiring the perfect team
+                            of
+                            chefs equipped to serve your food and cake of choice </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex">
+                    <img src="imgs/team2.png">
+                    <div class="ml-auto">
+                        <h4>Mindy // Digital Media</h4>
+                        <p>Having headed the Department of Film & Media at UC Berkeley, Mindy is ready to 
+                            capture the memories of your wedding in ways you didn’t know were possible </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex">
+                    <img src="imgs/team3.png">
+                    <div class="ml-auto">
+                        <h4>Jazmyn // Venue</h4>
+                        <p>From booking the right venue to 
+                            designing it top to bottom, from hiring the perfect musicians to 
+                            coordinating your desired wedding theme, Jazmyn has it all covered </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex">
+                    <img src="imgs/team4.png">
+                    <div class="ml-auto">
+                        <h4>Robin // Social + Dressing</h4>
+                        <p>Robin is an expert in graphic and fashion design. That’s why we have her coordinating wedding invitations, a website, and helping you and your guests of honor find the perfect attire </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script>
+
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+
+    </script>
+</body>
+
+</html>
