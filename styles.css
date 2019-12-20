@@ -1,5 +1,13 @@
+nav ul li{
+    list-style-type: none;
+}
+
 .jumbotron, header{
     margin:0;
+}
+
+.navbar-dark .navbar-toggler{
+    color:rgba(255,255,255,1);
 }
 
 body{
@@ -16,6 +24,7 @@ span{
 
 p{
     font-weight:400;
+    font-size:1.3rem;
 }
 
 h1, h2, h3{
@@ -68,6 +77,14 @@ h1, h2{
 
 }
 
+header h1{
+    font-size:3rem;
+}
+
+header h2{
+    font-size:2.3rem;
+}
+
 /**ABOUT**/
 
 #about img{
@@ -81,6 +98,8 @@ h1, h2{
 #about span{
     color:#FF9797;
 }
+
+
 
 /**TEAM**/
 
@@ -128,6 +147,7 @@ h1, h2{
 
     #testimonials p{
         font-size: 1.7rem;
+        padding-left:10px;
     }
 
     #testimonials{
@@ -148,10 +168,85 @@ h1, h2{
     }
 
     blockquote footer{
+        padding-top:0;
         text-align: right;
         font-weight:600;
         font-size:1.5rem;
     }
+
+    blockquote p{
+        border-left:20px solid #FFF;
+    }
+
+    /**PLAN**/
+
+    #plan{
+        color:#895442;
+        font-size:1.3em;
+    }
+
+    #plan h3{
+        margin-bottom:50px;
+    }
+
+    #plan form{
+        margin-bottom:50px;
+    }
+
+    form, label, input{
+        display:block;
+    }
+
+    form label{
+        font-weight:600;
+        font-size:1.5rem;
+    }
+
+    form input{
+        margin-bottom:20px;
+    }
+
+    form input, form textarea{
+        width:90%;
+        background:#FFD4CA;
+        color:#895442;
+        border: solid #BC7E6D 1px;
+        padding:10px;
+    }
+
+    #plan h5{
+        font-weight:600;
+        font-size:1.5rem;
+    }
+
+    #plan a{
+        color:#895442;
+    }
+
+
+    /**FOOTER**/
+
+    footer{
+        background:#895442;
+        padding:250px 50px 30px 50px;
+        color:#FFF;
+        width:100%;
+    }
+
+    footer img{
+        width:300px;
+        margin-bottom:30px;
+    }
+
+    footer nav ul li{
+        font-size:1.5rem;
+        padding-right:20px;
+    }
+    
+    footer a{
+        color:white;
+    }
+    
 
     /**MEDIA QUERIES**/
 
@@ -162,6 +257,10 @@ h1, h2{
 
     #about .col-md-5{
         order:2;
+    }
+
+    #about p{
+        font-size:1rem;
     }
 }
 
@@ -187,6 +286,10 @@ h1, h2{
 
     .navbar-default.scrolled{
     background:rgba(226,173,179, 0.8);
+    }
+
+    #about p{
+        font-size:1.3rem;
     }
 
 }
