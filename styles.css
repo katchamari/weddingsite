@@ -150,7 +150,7 @@ header h2{
     /** TESTIMONIALS**/
 
     #testimonials p{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         padding-left:10px;
     }
 
@@ -163,7 +163,7 @@ header h2{
     }
 
     #testimonials i{
-        font-size:3rem;
+        font-size:2rem;
         padding-right:10px;
     }
 
@@ -227,6 +227,10 @@ header h2{
         color:#895442;
     }
 
+    #plan img{
+        width:90%;
+    }
+
 
     /**FOOTER**/
 
@@ -237,18 +241,32 @@ header h2{
         width:100%;
     }
 
+    footer p{
+        font-size:1rem;
+    }
+
     footer img{
-        width:300px;
+        width: 60%;
         margin-bottom:30px;
     }
 
     footer nav ul li{
         font-size:1.5rem;
-        padding-right:20px;
     }
     
     footer a{
         color:white;
+    }
+
+    footer a:hover{
+        text-decoration: none;
+        color:#FFF;
+    }
+
+    footer .col-md-3{
+        padding-right:0;
+        padding-left:0;
+        width:20px;
     }
     
 
