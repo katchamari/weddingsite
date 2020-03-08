@@ -45,6 +45,10 @@ section:nth-of-type(even){
     color:#FFF;
 }
 
+.row{
+    display:block;
+}
+
 /**NAVBAR**/
 
 .navbar{
@@ -81,12 +85,16 @@ h1, h2{
 
 }
 
+header div{
+    padding:10px;
+}
+
 header h1{
-    font-size:3rem;
+    font-size:1.7rem;
 }
 
 header h2{
-    font-size:2.3rem;
+    font-size:1.4rem;
 }
 
 /**ABOUT**/
@@ -97,6 +105,7 @@ header h2{
 
 #about{
     color:#895442;
+    text-align:center;
 }
 
 #about span{
@@ -106,6 +115,11 @@ header h2{
 
 
 /**TEAM**/
+
+#team{
+    padding:20px;
+    text-align:center;
+}
 
 #team .col-lg-6{
     margin-bottom:70px;
@@ -123,6 +137,15 @@ header h2{
     width:150px;
     height:150px;
     margin-right:20px;
+    margin-bottom:10px;
+}
+
+#team .d-flex{
+    display:block!important;
+}
+
+.lead{
+    margin-bottom:40px;
 }
 
 /**GRID PH0TOS**/
@@ -187,6 +210,13 @@ header h2{
     #plan{
         color:#895442;
         font-size:1.3em;
+        text-align:center;
+        margin:auto;
+        padding-bottom:100px;
+    }
+
+    form input, form textarea{
+        margin:auto;
     }
 
     #plan h3{
@@ -236,9 +266,10 @@ header h2{
 
     footer{
         background:#895442;
-        padding:250px 50px 30px 50px;
+        padding:50px 50px 30px 50px;
         color:#FFF;
         width:100%;
+        text-align:center;
     }
 
     footer p{
@@ -246,7 +277,7 @@ header h2{
     }
 
     footer img{
-        width: 60%;
+        width: 200px;
         margin-bottom:30px;
     }
 
@@ -263,14 +294,28 @@ header h2{
         color:#FFF;
     }
 
-    footer .col-md-3{
-        padding-right:0;
-        padding-left:0;
-        width:20px;
-    }
+
     
 
+
+
+
     /**MEDIA QUERIES**/
+
+@media only screen and (min-width:600px){
+    #team .d-flex{
+        display:flex!important;
+        text-align:left;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    header h2{
+        font-size:1.7rem;
+    }
+}
 
 @media only screen and (min-width:768px){
     #about .col-md-6{
@@ -284,6 +329,38 @@ header h2{
     #about p{
         font-size:1rem;
     }
+
+    #about{
+        text-align:left;
+    }
+
+    .row{
+        display:flex;
+    }
+
+
+
+    footer nav ul li{
+        font-size:1.3rem;
+    }
+
+    footer{
+        text-align:left;
+    }
+
+    .align-self-start{
+        text-align:right;
+    }
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    header h2{
+        font-size:2.2rem;
+    }
+
+   
 }
 
 
@@ -312,6 +389,26 @@ header h2{
 
     #about p{
         font-size:1.3rem;
+    }
+
+    #plan .row{
+        display:flex;
+    }
+
+    #plan{
+        text-align:left;
+    }
+
+    form input, form textarea{
+        margin-left:0;
+    }
+
+    header h1{
+        font-size:3rem;
+    }
+
+    header h2{
+        font-size:2.7rem;
     }
 
 }
